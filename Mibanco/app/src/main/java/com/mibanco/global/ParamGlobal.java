@@ -2,6 +2,7 @@ package com.mibanco.global;
 
 /**
  * Created by usuario on 31/01/2016.
+ * agregar aqui parametros globales que utilizaremos en el proyecto.
  */
 public class ParamGlobal {
 
