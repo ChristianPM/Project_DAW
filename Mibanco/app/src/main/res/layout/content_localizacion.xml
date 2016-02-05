@@ -9,27 +9,17 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.example.iron.sistemagestionclientes.InicioActivity"
-    tools:showIn="@layout/activity_inicio">
+    tools:context="com.mibanco.myapplication.LocalizacionActivity"
+    tools:showIn="@layout/activity_localizacion">
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Consultar Clientes"
-        android:id="@+id/btnConsultar"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        android:onClick="pasaraBusquedaActivity"/>/>
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Registrar Solicitud"
-        android:id="@+id/btnRegistrar"
+        android:id="@+id/imageView"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="120dp"
-        android:onClick="pasaraSeguimientoActivity"
-        />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/avperu"
+
+       />
 </RelativeLayout>

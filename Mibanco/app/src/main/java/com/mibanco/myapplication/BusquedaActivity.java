@@ -1,5 +1,6 @@
 package com.mibanco.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -24,6 +25,12 @@ public class BusquedaActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+    }
+    public void pasaraListaClientesActivity(View v) {
+        Intent act = new Intent(this, ListaClientesActivity.class);
+
+        startActivity(act);
+
     }
 
 }

@@ -6,4 +6,5 @@
     <string name="title_activity_lista_clientes">ListaClientesActivity</string>
     <string name="title_activity_registrar_solicitud">RegistrarSolicitudActivity</string>
     <string name="title_activity_registrar_seguimiento">RegistrarSeguimientoActivity</string>
+    <string name="title_activity_localizacion">LocalizacionActivity</string>
 </resources>
