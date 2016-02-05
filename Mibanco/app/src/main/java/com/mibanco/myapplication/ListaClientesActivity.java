@@ -70,6 +70,23 @@ public class ListaClientesActivity extends AppCompatActivity {
         startActivity(act);
 
     }
+    public void llamarALocalizacionActivity(View v) {
+
+        Intent act = new Intent(this, LocalizacionActivity.class);
+
+        startActivity(act);
+
+    }
+
+    public void VolverABusquedaActivity(View v) {
+
+        Intent act = new Intent(this, BusquedaActivity.class);
+
+        startActivity(act);
+
+    }
+
+
 
 
 

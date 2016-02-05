@@ -32,5 +32,12 @@ public class BusquedaActivity extends AppCompatActivity {
         startActivity(act);
 
     }
+    public void VolverAInicioActivity(View v) {
+
+        Intent act = new Intent(this, InicioActivity.class);
+
+        startActivity(act);
+
+    }
 
 }
