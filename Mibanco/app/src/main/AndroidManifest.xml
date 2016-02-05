@@ -1,25 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.mibanco.myapplication" >
+    package="com.mibanco.myapplication">
 
-    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".IndexActivity"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".InicioActivity"
+            android:label="@string/title_activity_inicio"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".BusquedaActivity"
+            android:label="@string/title_activity_busqueda"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ListaClientesActivity"
+            android:label="@string/title_activity_lista_clientes"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistrarSolicitudActivity"
+            android:label="@string/title_activity_registrar_solicitud"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".RegistrarSeguimientoActivity"
+            android:label="@string/title_activity_registrar_seguimiento"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
