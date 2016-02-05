@@ -22,8 +22,11 @@ public class InicioActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+<<<<<<< HEAD
                 //ESTE ES UN COMENTARIO DE PRUEBA
 
+=======
+>>>>>>> origin/master
             }
         });
     }
