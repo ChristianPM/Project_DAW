@@ -36,7 +36,7 @@
             android:layout_gravity="left"/>
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/eNombre"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -55,11 +55,11 @@
             android:layout_gravity="left"/>
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/eDistrito"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textEmailAddress">
+            android:inputType="text">
         </EditText>
 
 
@@ -69,8 +69,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Buscar"
-            android:onClick="pasaraListaClientesActivity"/>
+            android:onClick="Buscar"/>
 
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text=""
+            android:id="@+id/resultado"
+            android:layout_gravity="center_horizontal" />
         <Button
             android:id="@+id/btnCancelar"
             android:layout_width="match_parent"
@@ -79,5 +86,8 @@
             android:onClick="VolverAInicioActivity"/>
 
     </LinearLayout>
+
+
+
 
 </ScrollView>
