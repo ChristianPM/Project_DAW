@@ -13,9 +13,12 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+<<<<<<< HEAD
 import com.mibanco.bean.Usuario;
 import com.mibanco.dao.UsuarioDao;
 
+=======
+>>>>>>> origin/master
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -61,7 +64,11 @@ public class BusquedaActivity extends AppCompatActivity {
             }
         });
 
+<<<<<<< HEAD
         nombre = (EditText)findViewById(R.id.eNombre );
+=======
+        nombre = (EditText)findViewById(R.id.eNombre);
+>>>>>>> origin/master
         distrito = (EditText)findViewById(R.id.eDistrito);
         resultado = (TextView)findViewById(R.id.resultado);
 
@@ -79,6 +86,7 @@ public class BusquedaActivity extends AppCompatActivity {
 
     public void Buscar(View v) {
         hiloconexion = new ObtenerWebService();
+<<<<<<< HEAD
         UsuarioDao dao = new UsuarioDao(getBaseContext());
         Usuario beanUsuario;
         String usuario="";
@@ -91,6 +99,9 @@ public class BusquedaActivity extends AppCompatActivity {
 
 
         String cadenallamada = GET_BY_ID + "?nombre=" + nombre.getText().toString()+"&distrito=" +distrito.getText().toString()+ "&usuario="+usuario;
+=======
+        String cadenallamada = GET_BY_ID + "?nombre=" + nombre.getText().toString()+"&distrito=" +distrito.getText().toString();
+>>>>>>> origin/master
         hiloconexion.execute(cadenallamada,"2");   // Parámetros que recibe doInBackground
     }
 
@@ -126,6 +137,7 @@ public class BusquedaActivity extends AppCompatActivity {
                         //Accedemos al vector de resultados
 
                         String resultJSON = respuestaJSON.getString("estado");   // estado es el nombre del campo en el JSON
+<<<<<<< HEAD
                         System.out.println("resultado busqueda" + resultJSON);
                         if (resultJSON=="1"){      // hay un alumno que mostrar
                             JSONArray alumnosJSON = respuestaJSON.getJSONArray("clientes");   // estado es el nombre del campo en el JSON
@@ -134,6 +146,15 @@ public class BusquedaActivity extends AppCompatActivity {
                                         alumnosJSON.getJSONObject(i).getString("NOMBRE") + " " +
                                         alumnosJSON.getJSONObject(i).getString("DISTRITO") + " " +
                                         alumnosJSON.getJSONObject(i).getString("DIRECCION") + "\n";
+=======
+                        if (resultJSON=="1"){      // hay un alumno que mostrar
+                            JSONArray alumnosJSON = respuestaJSON.getJSONArray("clientes");   // estado es el nombre del campo en el JSON
+                            for(int i=0;i<alumnosJSON.length();i++) {
+                                devuelve = devuelve + alumnosJSON.getJSONObject(i).getString("codigo") + " " +
+                                        alumnosJSON.getJSONObject(i).getString("nombre") + " " +
+                                        alumnosJSON.getJSONObject(i).getString("apellido_paterno") + " " +
+                                        alumnosJSON.getJSONObject(i).getString("distrito") + "\n";
+>>>>>>> origin/master
                              /*   devuelve = devuelve + respuestaJSON.getJSONObject("clientes").getString("codigo") + " " +
                                         respuestaJSON.getJSONObject("clientes").getString("nombre") + " " +
                                         respuestaJSON.getJSONObject("clientes").getString("apellido_paterno");*/

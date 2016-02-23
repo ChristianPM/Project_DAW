@@ -1,12 +1,16 @@
 package com.mibanco.myapplication;
 
 import android.content.Intent;
+<<<<<<< HEAD
 import android.os.AsyncTask;
+=======
+>>>>>>> origin/master
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+<<<<<<< HEAD
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -47,6 +51,11 @@ public class RegistrarSeguimientoActivity extends AppCompatActivity {
     String strDescripcion;
 
 
+=======
+import android.view.View;
+
+public class RegistrarSeguimientoActivity extends AppCompatActivity {
+>>>>>>> origin/master
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,6 +72,7 @@ public class RegistrarSeguimientoActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+<<<<<<< HEAD
 
         final String[] cursos = new String[] { "1-No desea prestamo",    "2-Para el proximo mes", "3-Ya obtuvo prestamo" };
 
@@ -232,3 +242,15 @@ public class ObtenerWebService extends AsyncTask<String, Void, String> {
 
 }
 }
+=======
+    }
+    public void VolverAListaClientesActivity(View v) {
+
+        Intent act = new Intent(this, ListaClientesActivity.class);
+
+        startActivity(act);
+
+    }
+    //VolverAListaClientesActivity
+}
+>>>>>>> origin/master

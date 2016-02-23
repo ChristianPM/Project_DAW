@@ -55,11 +55,21 @@
             android:text="Tipo de Condición"
             android:layout_gravity="left"/>
 
+<<<<<<< HEAD
         <Spinner
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/spinnerSeguimiento"
             android:layout_gravity="center_horizontal" />
+=======
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress">
+        </EditText>
+>>>>>>> origin/master
 
         <TextView
             android:id="@+id/textView4"
@@ -85,12 +95,19 @@
             android:layout_gravity="center_horizontal" />
 
         <Button
+<<<<<<< HEAD
             android:id="@+id/btnRegistrar"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Registrar"
             android:onClick="registrar"
             />
+=======
+            android:id="@+id/btnBuscar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registrar" />
+>>>>>>> origin/master
 
         <Button
             android:id="@+id/btnCancelar"
