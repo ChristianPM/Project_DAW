@@ -63,7 +63,6 @@
         </EditText>
 
 
-<<<<<<< HEAD
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -71,8 +70,6 @@
             android:id="@+id/resultado"
             android:layout_gravity="center_horizontal" />
 
-=======
->>>>>>> origin/master
 
         <Button
             android:id="@+id/btnBuscar"
@@ -82,16 +79,7 @@
             android:onClick="Buscar"/>
 
 
-<<<<<<< HEAD
 
-=======
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text=""
-            android:id="@+id/resultado"
-            android:layout_gravity="center_horizontal" />
->>>>>>> origin/master
         <Button
             android:id="@+id/btnCancelar"
             android:layout_width="match_parent"
