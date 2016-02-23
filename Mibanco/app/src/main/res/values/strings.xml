@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Mibanco</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_inicio">InicioActivity</string>
+    <string name="title_activity_busqueda">BusquedaActivity</string>
+    <string name="title_activity_lista_clientes">ListaClientesActivity</string>
+    <string name="title_activity_registrar_solicitud">RegistrarSolicitudActivity</string>
+    <string name="title_activity_registrar_seguimiento">RegistrarSeguimientoActivity</string>
+    <string name="title_activity_localizacion">LocalizacionActivity</string>
+    <string name="title_activity_login">LoginActivity</string>
 </resources>

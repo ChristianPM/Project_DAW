@@ -27,32 +27,15 @@ public class DbHelper extends SQLiteOpenHelper {
     public void onCreate(SQLiteDatabase db) {
 
         String sql="";
-
-        sql = manipulation.getStanmentCreateCliente() ;
-        db.execSQL(sql);
-
-        sql = manipulation.getStanmentCreateCampana() ;
-        db.execSQL(sql);
-
-        sql = manipulation.getStanmentCreateSeguimiento() ;
-        db.execSQL(sql);
-
-        sql = manipulation.getStanmentCreateSolicitud() ;
+        sql = manipulation.getStanmentCreateUsuario() ;
         db.execSQL(sql);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-        db.execSQL(manipulation.getStanmentDropCliente());
-        onCreate(db);
 
-        db.execSQL(manipulation.getStanmentDropCampana());
-        onCreate(db);
 
-        db.execSQL(manipulation.getStanmentDropSeguimiento());
-        onCreate(db);
-
-        db.execSQL(manipulation.getStanmentDropSolicitud());
+        db.execSQL(manipulation.getStanmentDropUsuario());
         onCreate(db);
     }
 

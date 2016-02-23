@@ -32,6 +32,10 @@ public class ManipulationDLLBean {
         return " ";
     }
 
+    public String getStanmentCreateUsuario(){
+        return "CREATE TABLE IF NOT EXISTS usuario (codigo TEXT NOT NULL, nombre TEXT NOT NULL) ";
+    }
+
 
     public String getStanmentDropCliente(){
         return " ";
@@ -49,5 +53,7 @@ public class ManipulationDLLBean {
         return " ";
     }
 
-
+    public String getStanmentDropUsuario(){
+        return "DROP TABLE IF EXISTS usuario ";
+    }
 }

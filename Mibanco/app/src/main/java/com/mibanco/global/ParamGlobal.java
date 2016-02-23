@@ -13,8 +13,15 @@ public class ParamGlobal {
     public static String TABLA_SEGUIMIENTO ="TB_SEGUIMIENTO";
     public static String TABLA_SOLICITUD ="TB_SOLICITUD";
 
+    //USUARIO
+    public static String CODIGO_USUARIO_SESION = "11774";
+
 
     //PARAMETROS PARA WEB SERVICES
-    public static String URL_WEB_SERVICE ="";
+    public static String URL_WEB_SERVICE ="http://upcmoviles2016.esy.es";
+
+    //PARAMETROS DE PAGINAS PHP
+    public static String PAGE_LOGIN = "/Login.php";
+    public static String PAGE_SEGUIMIENTO = "/Registrar_seguimiento.php";
 
 }

@@ -1,88 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:showIn="@layout/activity_index"
-    tools:context="com.mibanco.myapplication.IndexActivity">
+    tools:context="com.mibanco.myapplication.LoginActivity"
+    tools:showIn="@layout/activity_login">
 
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Ingrese sus Datos..."
-        android:id="@+id/textView9"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:text="Ingrese sus Datos."
+        android:id="@+id/textView6"  />
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="USUARIO:"
-        android:id="@+id/textView10"
-        android:layout_below="@+id/textView9"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="49dp" />
+        android:layout_marginTop="65dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/txtUsuarioLog"
-        android:layout_below="@+id/textView10"
+        android:id="@+id/txtUsuario"
+        android:layout_below="@+id/textView7"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="CLAVE:"
-        android:id="@+id/textView11"
-        android:layout_below="@+id/txtUsuarioLog"
+        android:id="@+id/textView8"
+        android:layout_below="@+id/txtUsuario"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="53dp" />
+        android:layout_marginTop="47dp" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/txtClaveLog"
-        android:layout_below="@+id/textView11"
+        android:id="@+id/txtClave"
+        android:layout_below="@+id/textView8"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textAppearance="?android:attr/textAppearanceLarge"
         android:text=""
-        android:id="@+id/lblResultadoLog"
-        android:layout_below="@+id/txtClaveLog"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="51dp" />
+        android:id="@+id/lblResultado"
+        android:layout_marginTop="300dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="INGRESAR"
-        android:id="@+id/btnLogueo"
-        android:layout_below="@+id/lblResultadoLog"
+        android:id="@+id/btnIngresar"
+        android:layout_marginTop="92dp"
+        android:layout_below="@+id/txtClave"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="45dp"
         android:onClick="loguear"/>
+
 </RelativeLayout>
